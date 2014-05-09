@@ -8,7 +8,7 @@ This is a README for the SNP likelihood calculation for the [Haplotype Reference
         cd hrc-release1
         make
 
-2. Run samtools mpileup on your cohort (or multi-cohort) BAM files to generate BCF2 files. These should be the BAM files associated with all the samples submitted to the project in the haplotype VCFs. The VCF `wgs.union.sites.breakMultiAC2.vcf.gz` in the union site list currently only available within the project.
+2. Run samtools mpileup on your cohort (or multi-cohort) BAM files to generate BCF2 files. These should be the BAM files associated with all the samples submitted to the project in the haplotype VCFs. The VCF `wgs.union.sites.breakMultiAC2.vcf.gz` (`md5sum : 78952ae50b90cb4707579cee7a3adaa5`) in the union site list currently only available within the project.
 
     The command can be split into multiple jobs for non-overlapping chunks across the genome. For a particular chunk, 
 
