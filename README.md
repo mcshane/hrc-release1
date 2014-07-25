@@ -54,7 +54,7 @@ This is a README for the SNP likelihood calculation for the [Haplotype Reference
 
         bcftools/bcftools view -h $CHROM.$COHORT.bcf > old_header.vcf
         ** map sample names to make new header ** > new_header.vcf
-        (cat new_header.vcf | bcftools/bcftools view -H $CHROM.$COHORT.bcf) | bcftools/bcftools view -Ob > $CHROM.$COHORT.new_header.bcf
+        (cat new_header.vcf ; bcftools/bcftools view -H $CHROM.$COHORT.bcf) | bcftools/bcftools view -Ob > $CHROM.$COHORT.new_header.bcf
 
 5. Submit your cohort likelihood BCFs.
 
